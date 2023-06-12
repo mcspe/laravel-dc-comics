@@ -9,6 +9,7 @@
         <th scope="col">Titolo</th>
         <th scope="col">Serie</th>
         <th scope="col">Categoria</th>
+        <th scope="col">Dettagli</th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
             <td>{{ $comic->title }}</td>
             <td>{{ $comic->series }}</td>
             <td>{{ $comic->type }}</td>
+            <td><a href="{{ route('comic.show', $comic) }}" class="btn btn-primary">Vai</a></td>
         </tr>
       @endforeach
     </tbody>
