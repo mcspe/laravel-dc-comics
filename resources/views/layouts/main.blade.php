@@ -16,6 +16,11 @@
 </head>
 
 <body>
+    @include('partials.header')
+
+    <main class="container py-5">
+        @yield('content')
+    </main>
 
 </body>
 
